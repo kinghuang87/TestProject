@@ -1,12 +1,12 @@
 /**
- * This file created at 2019Äê4ÔÂ9ÈÕ.
+ * This file created at 2019å¹´4æœˆ9æ—¥.
  *
  * Copyright (c) 2002-2019 Bingosoft, Inc. All rights reserved.
  */
-package main.unit.test.pck;
+package miniCoding.testProject.maven01;
 
 import static org.junit.Assert.*;
-import main.model.Student;
+import miniCoding.testProject.maven01.model.Student;
 
 import org.junit.Test;
 
@@ -20,7 +20,7 @@ public class TestStudent {
 	public void test() {
 		Student stu = new Student();
 	    stu.playGames(5);
-		System.out.println("Ñ§ÉúËµ£º"+stu.getSay());
+		System.out.println("å­¦ç”Ÿè¯´:"+stu.getSay());
 		assertEquals("Buzz", stu.getSay());
 	}
 }

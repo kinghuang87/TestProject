@@ -1,9 +1,9 @@
 /**
- * This file created at 2019��4��9��.
+ * This file created at 2019年4月9日.
  *
  * Copyright (c) 2002-2019 Bingosoft, Inc. All rights reserved.
  */
-package main.model;
+package miniCoding.testProject.maven01.model;
 
 /**
  * <code>{@link Teacher}</code>
@@ -11,6 +11,7 @@ package main.model;
  * @author kinghuang
  */
 public class Teacher {
+	
 	private Student[] students;
 	
 	/**
@@ -27,10 +28,14 @@ public class Teacher {
 		this.students = students;
 	}
 
+	/**
+	 * 老师给学生上课
+	 * @param students
+	 */
 	public void teachLesson(Student[] students) {
 		int i =1;
 		for(Student student:students){
-			student = new Student();
+			//带学生们一起玩游戏
 			student.playGames(i);
 			System.out.println(student.getSay());
 			i++;

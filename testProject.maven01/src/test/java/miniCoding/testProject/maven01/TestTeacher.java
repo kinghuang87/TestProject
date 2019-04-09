@@ -1,13 +1,13 @@
 /**
- * This file created at 2019Äê4ÔÂ9ÈÕ.
+ * This file created at 2019å¹´4æœˆ9æ—¥.
  *
  * Copyright (c) 2002-2019 Bingosoft, Inc. All rights reserved.
  */
-package main.unit.test.pck;
+package miniCoding.testProject.maven01;
 
 import static org.junit.Assert.*;
-import main.model.Student;
-import main.model.Teacher;
+import miniCoding.testProject.maven01.model.Student;
+import miniCoding.testProject.maven01.model.Teacher;
 
 import org.junit.After;
 import org.junit.Test;
@@ -30,7 +30,14 @@ public class TestTeacher {
 	public void test() {
 		Teacher teacher = new Teacher();
 		assertNotNull(teacher);
-		teacher.setStudents(new Student[33]);
+		//åˆå§‹åŒ–33ä¸ªå­¦ç”Ÿ
+		Student[] students = new Student[33];
+		for(int i =0;i<33;i++){
+			Student student = new Student();
+			student.setAge(11);
+			students[i] = student;
+		}
+		teacher.setStudents(students);
 		assertNotNull(teacher.getStudents());
 	    teacher.teachLesson(teacher.getStudents()); 
 	}
